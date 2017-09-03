@@ -1,0 +1,65 @@
+baseURL = "http://oopbase.de/"
+languageCode = "de-de"
+title = "oopbase"
+theme = "blackburn"
+author = "Marcel Schwark"
+
+[permalinks]
+  post = "/posts/:title/"
+
+copyright = "&copy; 2017. All rights reserved."
+canonifyurls = false
+paginate = 10
+
+[indexes]
+  tag = "tags"
+  topic = "topics"
+
+[params]
+  subtitle = "Code Snippets & Examples with focus on .NET Technologies"
+  brand = "oopbase"
+  googleAnalytics = "UA-22701184-1"
+  disqus = "oopbase-de"
+  highlightjs = "androidstudio"
+  highlightjs_extra_languages = ["yaml", "fsharp"]
+  dateFormat = "02 Jan 2006"
+  custom_css = ["css/my.css"]
+  custom_js = ["js/my.js"]
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "<i class='fa fa-home fa-fw'></i>"
+    weight = 1
+    identifier = "home"
+    url = "/"
+  [[menu.main]]
+    name = "Posts"
+    pre = "<i class='fa fa-list fa-fw'></i>"
+    weight = 2
+    identifier = "post"
+    url = "/post/"
+  [[menu.main]]
+    name = "Tags"
+    pre = "<i class='fa fa-tag fa-fw'></i>"
+    weight = 3
+    identifier = "tags"
+    url = "/tags/"
+  [[menu.main]]
+    name = "Datenschutz"
+    pre = "<i class='fa fa-lock fa-fw'></i>"
+    weight = 4
+    identifier = "privacy"
+    url = "/privacy/"
+  [[menu.main]]
+    name = "Impressum"
+    pre = "<i class='fa fa-user fa-fw'></i>"
+    weight = 5
+    identifier = "about"
+    url = "/about/"
+
+[social]
+  twitter = "oopbase"
+  github = "oopbase"
+  stackoverflow = "392632/oopbase"
+  xing = "Marcel_Schwark2"
