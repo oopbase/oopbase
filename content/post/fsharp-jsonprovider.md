@@ -1,7 +1,7 @@
 ---
 title: "Der F-Sharp JSON Type Provider"
 date: 2017-02-01T00:00:00+02:00
-tags: [ "f-sharp", "TypeProvider", "api", "json", "golem" ]
+tags: [ "f-sharp", "typeprovider", "api", "json", "golem" ]
 ---
 Im Laufe seiner Karriere befasst sich jeder Softwareentwickler früher oder später mit der Verarbeitung von JSON- oder XML-Dateien. Das Vorgehen ist dabei immer sehr ähnlich: Man analysiert die Struktur des zu verarbeitenden Dokuments, legt sich passende Model-Klassen an und überführt dann die Daten in die konkreten Objekte.
 
@@ -93,10 +93,8 @@ let fetchArticles developerKey articleType (limit : option<int>) =
 
 Abhängig davon, ob ein *limit* für die Artikel gesetzt wurde, wird die anzufragende URL zusammengebaut und anschließend über den Type Provider geladen und zurückgegeben (Für die C# Entwickler: das letzte Statement einer F# Funktion wird automatisch zurückgegeben).
 
-Und das war's auch schon. Dies ist der komplette F#-Code, der nötig ist, um Artikel von der golem.de REST-Schnittstelle anzufragen und zu verarbeiten. Eine Beispielverwendung der Funktion zeigt der folgende Screenshot:
+Und das war's auch schon. Dies ist der komplette F#-Code, der nötig ist, um Artikel von der golem.de REST-Schnittstelle anzufragen und zu verarbeiten. 
 
-![Screenshot](../images/jsonprovider/screenshot.png)
-
-Wie man sehen kann, wird über die Punktnotation typsicher auf das JSON Objekt zugegriffen. Dafür mussten keine Model-Klassen angelegt werden, da dies vom JSON Provider implizit übernommen wurde. Ähnliche Type Provider gibt es für [CSV-, XML- oder HTML-Dateien](http://fsharp.github.io/FSharp.Data/index.html). (Oder auch für [MineSweeper](http://pinksquirrellabs.com/post/2014/02/02/The-MineSweeper-Type-Provider.aspx), wenn man denn MineSweeper über die Punktnotation in der IDE via Intellisense spielen möchte 😁)
+Über die Punktnotation wird typsicher auf das JSON Objekt zugegriffen. Dafür müssen keine Model-Klassen angelegt werden, da dies vom JSON Provider implizit übernommen wird. Ähnliche Type Provider gibt es für [CSV-, XML- oder HTML-Dateien](http://fsharp.github.io/FSharp.Data/index.html). (Oder auch für [MineSweeper](http://pinksquirrellabs.com/post/2014/02/02/The-MineSweeper-Type-Provider.aspx), wenn man denn MineSweeper über die Punktnotation in der IDE via Intellisense spielen möchte 😁)
 
 Das komplette Beispiel habe ich [bei GitHub hochgeladen](https://github.com/oopbase/fsharp-golem). Bei Fragen oder Anregungen, freue ich mich über eure Kommentare.

@@ -17,6 +17,7 @@ As you can read by the title, I chose [Pong](https://en.wikipedia.org/wiki/Pong)
 
 ## Defining the model
 When thinking about the Pong game, there are basically three types of models:
+
 * **Paddles**: The paddles have got a position and a specific size.
 * **Ball**: The ball has got a position and a size as well. But it has also got speed and an angle.
 * **Game status**: Some kind of storage containing information about the current score.
