@@ -1,7 +1,7 @@
 ---
 title: "Implementing Pong in a functional manner with Fable"
 date: 2016-12-26T00:00:00+02:00
-tags: [ "f-sharp", "fable", "game", "pong" ]
+tags: [ "english-post", "f-sharp", "fable", "game", "pong" ]
 ---
 > This post is part of the [F# Advent Calendar in English 2016](https://sergeytihon.wordpress.com/2016/10/23/f-advent-calendar-in-english-2016/). Please check out the other posts as well.
 

@@ -1,7 +1,7 @@
 ---
 title: "Auf interne Typen und Member von außen zugreifen"
 date: 2017-03-27T00:00:00+02:00
-tags: [ "c-sharp", "internal", "internalsvisibleto" ]
+tags: [ "german-post", "c-sharp", "internal", "internalsvisibleto" ]
 ---
 Durch das `internal`-Schlüsselwort kann auf so deklarierte Typen und Member nur von Dateien aus der selben Assembly zugegriffen werden. Wenn man nun aber Unit-Tests für diese Typen und Member schreiben möchte, befindet man sich häufig in einem separaten Testprojekt. Dadurch fehlt die notwendige Zugriffsberechtigung und die zu testende Funktionalität muss ggf. weiter gekapselt werden.
 

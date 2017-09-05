@@ -1,7 +1,7 @@
 ---
 title: "Der F-Sharp JSON Type Provider"
 date: 2017-02-01T00:00:00+02:00
-tags: [ "f-sharp", "typeprovider", "api", "json", "golem" ]
+tags: [ "german-post", "f-sharp", "typeprovider", "api", "json", "golem" ]
 ---
 Im Laufe seiner Karriere befasst sich jeder Softwareentwickler früher oder später mit der Verarbeitung von JSON- oder XML-Dateien. Das Vorgehen ist dabei immer sehr ähnlich: Man analysiert die Struktur des zu verarbeitenden Dokuments, legt sich passende Model-Klassen an und überführt dann die Daten in die konkreten Objekte.
 

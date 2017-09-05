@@ -1,7 +1,7 @@
 ---
 title: "oopbase auf GitHub Pages"
 date: 2017-05-22T00:00:00+02:00
-tags: [ "announcement", "github" ]
+tags: [ "german-post", "announcement", "github" ]
 ---
 Seit der Umstellung von WordPress auf [Hugo](https://gohugo.io) läuft auf meinem vServer lediglich ein Apache HTTP Server. Es existiert keine Datenbank mehr, da Hugo statischen Inhalt generiert. Nun ist die Überlegung durchaus berechtigt, ob man einen kompletten vServer zum Hosten einer statischen Webseite benötigt 😉. Während des Studiums gab es genug Anwendungsfälle, wofür ein vServer tatsächlich ganz nett war. Nun bin ich aber zu dem Entschluss gekommen, meinen vServer zu kündigen und meinen Blog woanders zu Hosten. Meine Domain (oopbase.de) möchte ich aber weiterhin behalten.
 

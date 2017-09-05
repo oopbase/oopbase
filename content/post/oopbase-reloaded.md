@@ -1,7 +1,7 @@
 ---
 title: "oopbase reloaded"
 date: 2016-12-16T00:00:00+02:00
-tags: [ "announcement" ]
+tags: [ "english-post", "announcement" ]
 ---
 
 Recurring readers may notice that the blog has heavily changed since their last visit. 
