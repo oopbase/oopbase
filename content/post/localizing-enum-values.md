@@ -1,7 +1,6 @@
 ---
 title: "Localizing enum values in an enterprise WPF application"
 date: 2017-09-04T16:46:34+02:00
-draft: true
 tags: [ "english-post", "c-sharp",  "wpf", "xaml", "enum"]
 ---
 
@@ -62,7 +61,7 @@ When this collection is now bound to a data grid, the result will look like this
 ![datagrid without localization](/img/localize-enum-values/datagrid-without-localization.png)
 </center>
 
-When developing a multilingual application, the problem of this approach quickly becomes obvious. In the English-speaking countries there are no problems with the presented data, as the user is correctly shown "Male" and "Female" as gender. But what options do we have if we want to localize these enum-values with as little code as possible?
+When developing a multilingual application, the problem of this approach quickly becomes obvious. In the English-speaking countries there are no problems with the presented data, as the user is correctly shown "Male" and "Female" as gender. But what options do we have if we want to localize these enum values with as little code as possible?
 
 
 ## Solution 1: A naive approach
@@ -134,7 +133,7 @@ public class UserViewModel
 }
 ```
 
-With this approach we get the exact result as shown in solution 1. However, due to encapsulation we have a better separation of concerns. Nevertheless, the same problem exists as in solution 1: The property `GenderAsString` is used exclusively in the "View". There is actually *no other need* for our `ViewModel` to hold this data. So what other options do we have?
+With this approach we get the exact result as shown in solution 1. However, due to encapsulation we have a better separation of concerns. Nevertheless, the same problem exists as in solution 1: The property `GenderAsString` is used exclusively in the `View`. Even though the actual purpose of a `ViewModel` is to create a link between the `View` and the `model`, there is actually *no other need* for our `ViewModel` to hold this data. So what other options do we have?
 
 ## Solution 3: Using an IValueConverter
 
@@ -186,7 +185,7 @@ However, one big limitation remains. We now have an `IValueConverter` which only
 
 ## Solution 4: Using an attribute to create generic IValueConverter
 
-So we need a generic way to avoid code duplication. Therefore, we introduce a small attribute class, which gets a localization-key as constructor-parameter:
+So we need a generic way to avoid code duplication. Therefore, we introduce a small attribute class, which gets a localization key as constructor parameter:
 
 ```csharp
 [AttributeUsage(AttributeTargets.Field)]
@@ -254,6 +253,6 @@ Now we can use this `IValueConverter` for any enum type, as long as the enum val
 
 ## Summary
 
-The presented solutions illustrate that there are different approaches depending on the use case. For smaller applications, the implementation from solution 3 may be sufficient for the specific enum type. Anyway you should avoid unnecessary code in the `Model` and `ViewModel`. Therefore, solution 1 and solution 2 should be avoided as well. If you are familiar with value converters and custom attributes, I highly recommend choosing the last solution.
+The presented solutions illustrate that there are different approaches for localizing enum types depending on the use case. For smaller applications, the implementation from solution 3 may be sufficient for the specific enum type. Anyway you should avoid unnecessary code in the `Model` and `ViewModel`. Therefore, solution 1 and solution 2 should be avoided as well. If you are familiar with value converters and custom attributes, I highly recommend choosing the last solution.
 
 Are you using a completely different approach to localize enum values? If so, I would be happy to hear from it in the comments section below. :-)
